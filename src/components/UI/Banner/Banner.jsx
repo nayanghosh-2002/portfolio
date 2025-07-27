@@ -8,7 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 function Banner() {
   const handleResumeClick = () => {
-    window.open('src/assets/Resume/Nayan_resume.pdf', '_blank');
+    window.open('src/assets/Nayan_resume.pdf', '_blank');
   };
 
   return (
