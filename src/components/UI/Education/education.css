@@ -1,0 +1,166 @@
+.edu-section {
+  background-color: transparent;
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+  
+  
+  
+}
+
+.edu-title {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  color: #fdac34;
+  font-size: 42px;
+}
+
+.edu-title::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fdac34;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.4s ease-out;
+}
+
+.edu-title:hover::after {
+  width: 100%;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px 0;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #fdac34;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #fdac34;
+  border-radius: 50% ;
+  top: 20px;
+  z-index: 0;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: left;
+}
+
+.timeline-item.left::before {
+  right: -9px;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item.right::before {
+  left: -9px;
+}
+
+.timeline-content {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  transition: box-shadow 0.3s ease-in-out, transform 0.4s ease-in-out; 
+}
+
+.timeline-content:hover {
+  box-shadow: 0 8px 16px rgba(253, 172, 52, 0.4); 
+  transform: translateY(-5px); 
+}
+
+.timeline-content h3 {
+  margin: 5px 0;
+  color: #fdac34;
+  font-size: 20px;
+}
+
+.timeline-content h4 {
+  margin: 5px 0;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.timeline-year {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fdac34;
+  margin-bottom: 5px;
+}
+
+
+
+/* Responsive Design */
+
+
+@media (max-width: 768px) {
+  .timeline-container::before {
+    left: 8px; 
+  }
+
+  .edu-title {
+    font-size: 36px; 
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 20px;
+    text-align: left !important; 
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0; 
+  }
+
+  .timeline-item::before {
+    left: -1px; 
+    right: auto; 
+  }
+
+  .timeline-item.right::before {
+    left: -1px; 
+  }
+}

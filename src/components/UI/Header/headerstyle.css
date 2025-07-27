@@ -1,0 +1,114 @@
+/* Header Styles */
+.header {
+  background: rgba(0, 0, 0, 0.232);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+
+/* Container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+/* Logo */
+.logo-container span {
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.name{
+  font-family: 'Allura', cursive;
+  font-size: 40px;
+}
+
+
+.name:hover {
+  color: #fdac34;
+  transition: width 0.7s ease-out;
+}
+
+.logo-container span:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation */
+.navigation-container ul {
+  list-style: none;
+  display: flex;
+  gap: 38px;
+}
+
+.navigation-container ul li {
+  display: inline;
+}
+
+.navigation-container ul li button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 19px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  
+  /* font-family: 'Allura', cursive; */
+  font-family: var(--font-primary);
+}
+
+.navigation-container ul li span {
+  color: #fdac34;
+}
+
+.navigation-container ul li button:hover {
+  color: #fdac34;
+  transform: scale(1.1);
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navigation-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .navigation-container.open {
+    display: flex;
+  }
+
+  .navigation-container ul {
+    flex-direction: column;
+  }
+}
+  

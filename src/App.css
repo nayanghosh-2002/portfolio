@@ -1,0 +1,106 @@
+/* Font Declarations */
+@font-face {
+  font-family: 'SF Mono';
+  src: local('SF Mono Regular'),
+       url('./assets/Fonts/SFMonoRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Allura';
+  src: url('./assets/Fonts/Allura-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bilbo-swash-caps-regular {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Global Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables for Consistency */
+:root {
+  --max-width: 1200px;
+  --padding: 20px;
+  --footer-height: 100px;
+  --header-height: 80px;
+  --font-primary: 'SF Mono', monospace;
+  --font-secondary: 'Allura', cursive;
+  --background-color: #000;
+  --text-color: #fff;
+  --accent-color: #fdac34;
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--padding);
+  min-height: calc(100vh - var(--footer-height) - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Smooth Scrolling for Mobile */
+body, html {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}
