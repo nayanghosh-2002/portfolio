@@ -2,21 +2,21 @@ import './skills.css';
 
 function Skills() {
   const skills = [
-    { src: 'src/assets/images/skills/react.svg', title: 'React' },
-    { src: 'src/assets/images/skills/javascript.svg', title: 'JavaScript' },
-    { src: 'src/assets/images/skills/mongoDB.svg', title: 'MongoDB' },
-    { src: 'src/assets/images/skills/html.svg', title: 'HTML' },
-    { src: 'src/assets/images/skills/css.svg', title: 'CSS' },
-    { src: 'src/assets/images/skills/tailwind-css.svg', title: 'Tailwind CSS' },
-    { src: 'src/assets/images/skills/Node.js.svg', title: 'Node.js' },
-    { src: 'src/assets/images/skills/express.svg', title: 'Express' },
-    { src: 'src/assets/images/skills/vercel.svg', title: 'Vercel' },
-    { src: 'src/assets/images/skills/mysql.svg', title: 'MySQL' },
-    { src: 'src/assets/images/skills/Git.svg', title: 'Git' },
-    { src: 'src/assets/images/skills/Vite.js.svg', title: 'Vite.js' },
-    { src: 'src/assets/images/skills/Solidity.svg', title: 'Solidity' },
-    { src: 'src/assets/images/skills/ethereum.svg', title: 'ETH' },
-    { src: 'src/assets/images/skills/Metamask.svg', title: 'Metamask' },
+    { src: '/images/skills/react.svg', title: 'React' },
+    { src: '/images/skills/javascript.svg', title: 'JavaScript' },
+    { src: '/images/skills/MongoDB.svg', title: 'MongoDB' },
+    { src: '/images/skills/html.svg', title: 'HTML' },
+    { src: '/images/skills/css.svg', title: 'CSS' },
+    { src: '/images/skills/tailwind-css.svg', title: 'Tailwind CSS' },
+    { src: '/images/skills/Node.js.svg', title: 'Node.js' },
+    { src: '/images/skills/Express.svg', title: 'Express' },
+    { src: '/images/skills/Vercel.svg', title: 'Vercel' },
+    { src: '/images/skills/mysql.svg', title: 'MySQL' },
+    { src: '/images/skills/Git.svg', title: 'Git' },
+    { src: '/images/skills/Vite.js.svg', title: 'Vite.js' },
+    { src: '/images/skills/Solidity.svg', title: 'Solidity' },
+    { src: '/images/skills/ethereum.svg', title: 'ETH' },
+    { src: '/images/skills/metamask.svg', title: 'Metamask' },
   ];
 
   return (
