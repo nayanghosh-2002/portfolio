@@ -23,8 +23,8 @@ function Projects() {
             title: "Portfolio",
             category: "react", // 
             description: "Interactive portfolio with smooth animations, project showcases and a creative glimpse into MERN and blockchain development journey.",
-            git: "https://github.com/nayanghosh-2002/",
-            link: "https://coming-soon-sooty-two.vercel.app/"
+            git: "https://github.com/nayanghosh-2002/portfolio",
+            link: "https://nayangh-portfolio.vercel.app"
         },
         {
             title: "Cuts",
