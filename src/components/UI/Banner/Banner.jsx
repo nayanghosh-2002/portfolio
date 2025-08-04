@@ -8,7 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 function Banner() {
   const handleResumeClick = () => {
-    window.open('/Nayan_resume.pdf', '_blank');
+    window.open('src/assets/Resume/Nayan_resume.pdf', '_blank');
   };
 
   return (
@@ -40,23 +40,26 @@ function Banner() {
       
 
         <p className="banner-intro-subtext">
-          A passionate&nbsp;
-          <TypeAnimation
-            sequence={[
-            'Coder', 1500,
-            'Frontend Developer', 1500,
-            'Blockchain Enthusiast', 1500,
-            'Full-Stack Developer', 1500,
-            'Musician', 1500,
-            'Learner', 1500,
-            'Chess Player', 1500,
-            'Guitarist', 1500,
-            'UI/UX Designer', 1500,
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-          />
+          <span className="passionate-text">A passionate&nbsp;</span>
+          <span className="animated-roles">
+
+            <TypeAnimation
+              sequence={[
+              'Coder', 1500,
+              'Frontend Developer', 1500,
+              'Blockchain Enthusiast', 1500,
+              'Full-Stack Developer', 1500,
+              'Musician', 1500,
+              'Learner', 1500,
+              'Chess Player', 1500,
+              'Guitarist', 1500,
+              'UI/UX Designer', 1500,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </span>
         </p>
 
 
