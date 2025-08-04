@@ -7,7 +7,7 @@
   animation: fadeIn 2s ease-in forwards;
   height: 100vh;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 45px;
 }
 
 
@@ -209,10 +209,16 @@
   }
 }
 
-.banner-intro-subtext span {
+.banner-intro-subtext .animated-roles {
   color: #fdac34;
   font-weight: bold;
 }
+
+.passionate-text,
+.animated-roles {
+  display: inline;
+}
+
 
 
 
@@ -225,15 +231,31 @@
     justify-content: center;
     padding: 140px 20px 60px 20px;
     height: auto; 
+    margin-left: 0px;  
   }
 
   .banner-intro-text {
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;
   }
+
+  .banner-intro-name{
+    margin-top: 0px;
+  }
+
+
+  .passionate-text {
+    display: block;
+  }
+
+  .animated-roles {
+    display: block;
+    margin-top: 15px; 
+  }
+  
 
   .banner-dev-image {
     margin: 0 auto 20px auto;
