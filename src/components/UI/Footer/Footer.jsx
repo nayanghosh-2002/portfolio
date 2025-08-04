@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './footerstyle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faHandshake } from '@fortawesome/free-solid-svg-icons/faHandshake';
 
 function Footer() {
     const chaosEmojis = ['😶‍🌫️', '🤯', '🌀', '😵‍💫', '🎢'];
@@ -30,6 +31,9 @@ function Footer() {
                 </a>
                 <a href="https://www.linkedin.com/in/nayanghosh2002/" target="_blank" rel="noopener noreferrer" className="icon" aria-label="LinkedIn">
                     <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a href="https://linktr.ee/nayanghosh" target="_blank" rel="noopener noreferrer" className="icon" aria-label="LinkTree">
+                    <FontAwesomeIcon icon={faHandshake} />
                 </a>
             </div><br></br>
 
